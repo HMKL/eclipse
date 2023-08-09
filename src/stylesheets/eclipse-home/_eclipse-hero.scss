@@ -1,0 +1,10 @@
+.eclipse-hero {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 1200px;
+  }
+}

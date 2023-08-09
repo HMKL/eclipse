@@ -1,28 +1,49 @@
 let layoutHandler;
 
-(function($) {
+(function ($) {
     'use strict';
-    let LayoutHandler = function() {
+    let LayoutHandler = function () {
         let self = this;
 
-        this.ready = function() {
+        this.ready = function () {
             this.handleDOM();
             this.handleEvents();
         };
 
-        this.handleDOM = function() {
+        this.handleDOM = function () {
 
         };
 
-        this.handleEvents = function() {
+        this.handleEvents = function () {
 
         };
     };
 
     layoutHandler = new LayoutHandler();
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         layoutHandler.ready();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     });

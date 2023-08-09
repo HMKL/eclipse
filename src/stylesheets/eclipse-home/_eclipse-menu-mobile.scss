@@ -1,0 +1,19 @@
+.eclipse-menu-mobile {
+  position: absolute;
+  top: 77.5px;
+
+  right: -100vw;
+  z-index: 1;
+  // transition: all 0.3s ease-in-out;
+  background: #fff;
+  width: 100%;
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  &.show-mobile-menu {
+    right: 0;
+    // transition: all 0.3s ease-in-out;
+    transform: none;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+}

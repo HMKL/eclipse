@@ -1,28 +1,49 @@
 let layoutHandler;
 
-(function($) {
+(function ($) {
     'use strict';
-    let LayoutHandler = function() {
+    let LayoutHandler = function () {
         let self = this;
 
-        this.ready = function() {
+        this.ready = function () {
             this.handleDOM();
             this.handleEvents();
         };
 
-        this.handleDOM = function() {
+        this.handleDOM = function () {
 
         };
 
-        this.handleEvents = function() {
+        this.handleEvents = function () {
 
         };
     };
 
     layoutHandler = new LayoutHandler();
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         layoutHandler.ready();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     });
@@ -32,6 +53,25 @@ let layoutHandler;
 (function () {
   'use strict';
   // Your custom JavaScript goes here
+
+
+  const getHamburger = document.querySelector('.hamburger');
+  const getHamburgerSpan = document.querySelectorAll('.hamburger > span');
+  const getEclipseMobileMenu = document.querySelector('.eclipse-menu-mobile');
+
+  const modifySpan = () => {
+    getHamburger.addEventListener('click', () => {
+      getEclipseMobileMenu.classList.toggle('show-mobile-menu');
+      getHamburgerSpan.forEach(element => {
+        element.classList.toggle('show');
+      });
+    });
+  }
+  modifySpan();
+
+
+
+
 })();
 
 
