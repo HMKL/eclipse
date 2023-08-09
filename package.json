@@ -35,5 +35,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HMKL/eclipse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HMKL/eclipse/issues"
+  },
+  "homepage": "https://github.com/HMKL/eclipse#readme",
   "description": ""
 }
