@@ -48,7 +48,10 @@
         }
       }
       .content {
-        display: flex;
+        display: none;
+        @media (min-width: $lg) {
+          display: flex;
+        }
         .nav-links {
           list-style: none;
           padding: 0;

@@ -8060,9 +8060,7 @@ section .section-title.no-decoration:after {
 }
 
 .eclipse-header .wrap .main-nav .content {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .eclipse-header .wrap .main-nav .content .nav-links {
@@ -8180,8 +8178,8 @@ section .section-title.no-decoration:after {
   right: -100vw;
   z-index: 1;
   background: #fff;
-  width: 100%;
-  overflow: hidden;
+  width: 0%;
+  position: fixed;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -8193,6 +8191,7 @@ section .section-title.no-decoration:after {
   right: 0;
   -webkit-transform: none;
   transform: none;
+  width: 100%;
   transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -12664,6 +12663,12 @@ section .section-title.no-decoration:after {
 
   .eclipse-header .wrap {
     max-width: 1140px;
+  }
+
+  .eclipse-header .wrap .main-nav .content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
