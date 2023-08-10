@@ -31,11 +31,53 @@
     bottom: 0;
     z-index: -1;
   }
-  .test {
-    background: red;
+  .content {
+    background: #fff;
     position: relative;
     width: 50%;
     margin: 0 0 0 auto;
     height: 100%;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        position: relative;
+        a {
+          text-decoration: none;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 500;
+          color: #000;
+          font-family: "Roboto", sans-serif;
+          display: block;
+          padding: 10px 10px 10px 20px;
+          position: relative;
+          transition: all 0.3s ease-in-out;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 100%;
+            background: #913cf3;
+            opacity: 0;
+            left: 0;
+            top: 0;
+            // transition: all 0.3s ease-in-out;
+          }
+
+          &:hover:after {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover {
+            padding: 10px 10px 10px 25px;
+            transition: all 0.3s ease-in-out;
+            color: #913cf3;
+          }
+        }
+      }
+    }
   }
 }
