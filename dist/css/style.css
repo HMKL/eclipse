@@ -8026,7 +8026,7 @@ section .section-title.no-decoration:after {
 .eclipse-header .wrap .main-nav:after {
   content: "";
   position: absolute;
-  background: red;
+  background: #f2f3f7;
   width: 100%;
   height: 1px;
   bottom: 0;
@@ -8106,6 +8106,7 @@ section .section-title.no-decoration:after {
   width: 25px;
   height: 18px;
   position: relative;
+  display: block;
 }
 
 .eclipse-header .wrap .main-nav .hamburger span {
@@ -8160,24 +8161,88 @@ section .section-title.no-decoration:after {
   transform: rotate(-90deg);
 }
 
-.eclipse-hero {
+.home-page .eclipse-hero {
   position: relative;
   background-position: center center;
   background-size: cover;
+  height: 1200px;
 }
 
-.eclipse-hero:before {
+.home-page .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.home-page .wrap p,
+.home-page .wrap a,
+.home-page .wrap span,
+.home-page .wrap h1,
+.home-page .wrap .h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.home-page .wrap .inner {
+  padding: 250px 0 0 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.home-page .wrap .inner .items.left {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home-page .wrap .inner .items.left .info-text {
+  width: 300px;
+  position: relative;
+  text-align: center;
+}
+
+.home-page .wrap .inner .items.left .info-text h1,
+.home-page .wrap .inner .items.left .info-text .h1 {
+  color: #fff;
+  position: relative;
+  font-size: 40px;
+}
+
+.home-page .wrap .inner .items.left .info-text h1 span,
+.home-page .wrap .inner .items.left .info-text .h1 span {
+  position: relative;
+}
+
+.home-page .wrap .inner .items.left .info-text h1 span:after,
+.home-page .wrap .inner .items.left .info-text .h1 span:after {
   content: "";
-  display: block;
-  padding-top: 1200px;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  bottom: 4px;
+  left: 0;
+}
+
+.home-page .wrap .inner .items.right {
+  width: calc(50% - 50px);
+  display: none;
+}
+
+.over-body {
+  overflow: hidden;
 }
 
 .eclipse-menu-mobile {
   position: absolute;
   top: 77.5px;
-  right: -100vw;
   z-index: 1;
-  background: #fff;
   width: 0%;
   position: fixed;
   -webkit-transform: translateX(100%);
@@ -8185,16 +8250,40 @@ section .section-title.no-decoration:after {
   transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .eclipse-menu-mobile.show-mobile-menu {
-  right: 0;
   -webkit-transform: none;
   transform: none;
   width: 100%;
   transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.eclipse-menu-mobile:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.eclipse-menu-mobile .test {
+  background: red;
+  position: relative;
+  width: 50%;
+  margin: 0 0 0 auto;
+  height: 100%;
 }
 
 @media (min-width: 576px) {
@@ -11099,6 +11188,20 @@ section .section-title.no-decoration:after {
   .cta-section {
     padding: 70px 0;
   }
+
+  .home-page .wrap .inner {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .home-page .wrap .inner .items.left .info-text {
+    text-align: start;
+  }
+
+  .home-page .wrap .inner .items.right {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -12669,6 +12772,19 @@ section .section-title.no-decoration:after {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .eclipse-header .wrap .main-nav .hamburger {
+    display: none;
+  }
+
+  .home-page .wrap {
+    max-width: 1140px;
+  }
+
+  .home-page .wrap .inner .items.left .info-text h1,
+  .home-page .wrap .inner .items.left .info-text .h1 {
+    font-size: 48px;
   }
 }
 
