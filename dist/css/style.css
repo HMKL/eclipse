@@ -8372,7 +8372,7 @@ section .section-title.no-decoration:after {
   width: 75%;
   margin: 0 auto;
   text-align: center;
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
 }
 
 .eclipse-skills .wrap .inner .skills .text h2,
@@ -8384,7 +8384,7 @@ section .section-title.no-decoration:after {
 .eclipse-skills .wrap .inner .skills .marquee {
   background: linear-gradient(-135deg, #008ed9, #8b00db);
   width: 100%;
-  padding: 1em;
+  padding: 25px 0;
   color: #fff;
   font-weight: 200;
   display: -webkit-flex;
@@ -8401,13 +8401,13 @@ section .section-title.no-decoration:after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: inf 50s linear infinite running;
-  animation: inf 50s linear infinite running;
+  -webkit-animation: inf 100s linear infinite running;
+  animation: inf 100s linear infinite running;
 }
 
 .eclipse-skills .wrap .inner .skills .marquee .marquee-content .marquee-tag {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 0 10px;
   background: #f7f7f7;
   box-shadow: 3px 3px 0 rgba(32, 33, 37, 0.1);
@@ -12971,7 +12971,7 @@ section .section-title.no-decoration:after {
   }
 
   .eclipse-skills .wrap {
-    max-width: 55%;
+    max-width: 72%;
   }
 
   .eclipse-skills .wrap .inner .skills .text {
@@ -14616,6 +14616,10 @@ section .section-title.no-decoration:after {
 
   .cta-section {
     padding: 90px 0;
+  }
+
+  .eclipse-skills .wrap {
+    max-width: 55%;
   }
 }
 
