@@ -5,66 +5,82 @@
     margin-top: -210px;
   }
   .wrap {
-    width: calc(100% - 30px);
-    margin: 0 auto;
-    @media (min-width: $lg) {
-      max-width: 1140px;
-      margin: 0;
-    }
+    width: 100%;
+
     p,
     a,
     span,
-    h1 {
+    h1,
+    h2 {
       margin: 0;
       font-family: "Playfair Display", serif;
     }
     .inner {
       .skills {
         display: flex;
-        flex-direction: row;
-      }
-    }
-  }
-}
+        flex-direction: column;
 
-.marquee {
-  background: linear-gradient(-135deg, #008ed9, #8b00db);
-  width: 100%;
-  padding: 1em;
-  color: #fff;
-  font-weight: 200;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  @media (min-width: $lg) {
-    width: 700px;
-  }
-  .marquee-content {
-    display: flex;
-    animation: inf 80s linear infinite running;
-    .marquee-tag {
-      width: 100px;
-      height: 100px;
-      margin: 0 0.5em;
-      padding: 0.5em;
-      background: #f7f7f7;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-      border-radius: 10px;
-      i {
-        color: #000;
-        font-size: 30px;
+        .text {
+          width: 75%;
+          margin: 0 auto;
+          text-align: center;
+
+          @media (min-width: $lg) {
+            max-width: 700px;
+            margin: 0;
+          }
+          h2 {
+            font-family: "Roboto", sans-serif;
+            font-size: 40px;
+            @media (min-width: $lg) {
+              font-size: 48px;
+            }
+          }
+        }
+        .marquee {
+          background: linear-gradient(-135deg, #008ed9, #8b00db);
+          width: 100%;
+          padding: 1em;
+          color: #fff;
+          font-weight: 200;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          @media (min-width: $lg) {
+            max-width: 700px;
+          }
+
+          .marquee-content {
+            display: flex;
+            animation: inf 80s linear infinite running;
+            .marquee-tag {
+              width: 100px;
+              height: 100px;
+              margin: 0 0.5em;
+              padding: 0.5em;
+              background: #f7f7f7;
+              box-shadow: 3px 3px 0 rgba(32, 33, 37, 0.1);
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.2s ease;
+              border-radius: 10px;
+              i {
+                color: #000;
+                font-size: 30px;
+              }
+            }
+          }
+          @keyframes inf {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translate(-50%);
+            }
+          }
+        }
       }
-    }
-  }
-  @keyframes inf {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translate(-50%);
     }
   }
 }
