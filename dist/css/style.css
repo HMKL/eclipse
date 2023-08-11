@@ -8393,18 +8393,6 @@ section .section-title.no-decoration:after {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
-}
-
-.eclipse-skills .wrap .inner .skills .marquee:after {
-  position: absolute;
-  top: 0;
-  width: 50px;
-  height: 100%;
-  content: "";
-  z-index: 1;
-  right: 0;
-  background: linear-gradient(to left, white 5%, transparent 100%);
 }
 
 .eclipse-skills .wrap .inner .skills .marquee .marquee-content {
