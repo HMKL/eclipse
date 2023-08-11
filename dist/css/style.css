@@ -8165,7 +8165,7 @@ section .section-title.no-decoration:after {
   position: relative;
   background-position: center center;
   background-size: cover;
-  height: 1200px;
+  height: 700px;
 }
 
 .home-page .eclipse-hero .wrap {
@@ -8247,15 +8247,6 @@ section .section-title.no-decoration:after {
   display: none;
 }
 
-.home-page .eclipse-hero .wrap .social {
-  position: absolute;
-  bottom: 10%;
-  width: calc(95% - 30px);
-  right: 0px;
-  left: 15px;
-  background: #000;
-}
-
 .over-body {
   overflow: hidden;
 }
@@ -8268,9 +8259,6 @@ section .section-title.no-decoration:after {
   position: fixed;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   visibility: hidden;
   opacity: 0;
 }
@@ -8319,7 +8307,6 @@ section .section-title.no-decoration:after {
 
 .eclipse-menu-mobile .content ul li a {
   text-decoration: none;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
@@ -8349,8 +8336,106 @@ section .section-title.no-decoration:after {
 
 .eclipse-menu-mobile .content ul li a:hover {
   padding: 10px 10px 10px 25px;
-  transition: all 0.3s ease-in-out;
   color: #913cf3;
+}
+
+.eclipse-skills {
+  margin-top: 0;
+  position: relative;
+}
+
+.eclipse-skills .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.eclipse-skills .wrap p,
+.eclipse-skills .wrap a,
+.eclipse-skills .wrap span,
+.eclipse-skills .wrap h1,
+.eclipse-skills .wrap .h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.eclipse-skills .wrap .inner .skills {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.marquee {
+  background: linear-gradient(-135deg, #008ed9, #8b00db);
+  width: 100%;
+  padding: 1em;
+  color: #fff;
+  font-weight: 200;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marquee .marquee-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: inf 80s linear infinite running;
+  animation: inf 80s linear infinite running;
+}
+
+.marquee .marquee-content .marquee-tag {
+  width: 100px;
+  height: 100px;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  background: #f7f7f7;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+
+.marquee .marquee-content .marquee-tag i {
+  color: #000;
+  font-size: 30px;
+}
+
+@-webkit-keyframes inf {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+
+@keyframes inf {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+  }
 }
 
 @media (min-width: 576px) {
@@ -11269,10 +11354,6 @@ section .section-title.no-decoration:after {
   .home-page .eclipse-hero .wrap .inner .items.right {
     display: block;
   }
-
-  .home-page .eclipse-hero .wrap .social {
-    max-width: 936px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -12849,6 +12930,10 @@ section .section-title.no-decoration:after {
     display: none;
   }
 
+  .home-page .eclipse-hero {
+    height: 1200px;
+  }
+
   .home-page .eclipse-hero .wrap {
     max-width: 1140px;
   }
@@ -12860,6 +12945,19 @@ section .section-title.no-decoration:after {
 
   .home-page .eclipse-hero .wrap .inner .items.left .dots {
     display: block;
+  }
+
+  .eclipse-skills {
+    margin-top: -210px;
+  }
+
+  .eclipse-skills .wrap {
+    max-width: 1140px;
+    margin: 0;
+  }
+
+  .marquee {
+    width: 700px;
   }
 }
 
