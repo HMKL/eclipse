@@ -8393,19 +8393,31 @@ section .section-title.no-decoration:after {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+}
+
+.eclipse-skills .wrap .inner .skills .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  right: 0;
+  background: linear-gradient(to left, white 5%, transparent 100%);
 }
 
 .eclipse-skills .wrap .inner .skills .marquee .marquee-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: inf 80s linear infinite running;
-  animation: inf 80s linear infinite running;
+  -webkit-animation: inf 50s linear infinite running;
+  animation: inf 50s linear infinite running;
 }
 
 .eclipse-skills .wrap .inner .skills .marquee .marquee-content .marquee-tag {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin: 0 0.5em;
   padding: 0.5em;
   background: #f7f7f7;
@@ -11355,6 +11367,10 @@ section .section-title.no-decoration:after {
     padding: 70px 0;
   }
 
+  .home-page .eclipse-hero {
+    height: 700px;
+  }
+
   .home-page .eclipse-hero .wrap .inner {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -12965,6 +12981,10 @@ section .section-title.no-decoration:after {
     margin-top: -210px;
   }
 
+  .eclipse-skills .wrap {
+    max-width: 55%;
+  }
+
   .eclipse-skills .wrap .inner .skills .text {
     max-width: 700px;
     margin: 0;
@@ -12973,10 +12993,6 @@ section .section-title.no-decoration:after {
   .eclipse-skills .wrap .inner .skills .text h2,
   .eclipse-skills .wrap .inner .skills .text .h2 {
     font-size: 48px;
-  }
-
-  .eclipse-skills .wrap .inner .skills .marquee {
-    max-width: 700px;
   }
 }
 

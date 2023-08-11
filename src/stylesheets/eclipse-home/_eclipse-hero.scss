@@ -4,6 +4,9 @@
     background-position: center center;
     background-size: cover;
     height: 600px;
+    @media (min-width: $md) {
+      height: 700px;
+    }
     @media (min-width: $lg) {
       height: 1200px;
     }
