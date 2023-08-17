@@ -8656,7 +8656,8 @@ section .section-title.no-decoration:after {
   border: none;
 }
 
-.eclipse-documentation .wrap .photo-content .buttons .item-btns:focus-visible {
+.eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-next:focus-visible,
+.eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-prev:focus-visible {
   outline: none;
 }
 
