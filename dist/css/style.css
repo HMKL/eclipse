@@ -8640,17 +8640,20 @@ section .section-title.no-decoration:after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
   height: 50px;
+  width: 120px;
+  margin: 0 auto;
 }
 
 .eclipse-documentation .wrap .photo-content .buttons .item-btns {
   width: 52px;
   height: 52px;
   position: relative;
+  border: none;
 }
 
 .eclipse-documentation .wrap .photo-content .buttons .item-btns:focus-visible {
@@ -13297,9 +13300,7 @@ section .section-title.no-decoration:after {
   }
 
   .eclipse-documentation .wrap .photo-content .buttons {
-    -webkit-justify-content: end;
-    -ms-flex-pack: end;
-    justify-content: end;
+    margin: 0 0 0 auto;
   }
 
   .eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering.pad {

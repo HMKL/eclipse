@@ -43,16 +43,19 @@
     .photo-content {
       .buttons {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         position: relative;
         height: 50px;
+        width: 120px;
+        margin: 0 auto;
         @media (min-width: $lg) {
-          justify-content: end;
+          margin: 0 0 0 auto;
         }
         .item-btns {
           width: 52px;
           height: 52px;
           position: relative;
+          border: none;
           &:focus-visible {
             outline: none;
           }
