@@ -8718,29 +8718,36 @@ section .section-title.no-decoration:after {
   transition: all 0.3s ease-in-out;
 }
 
-.eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide .state {
+.eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide .location {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   z-index: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fafafa;
+  padding: 20px 0;
+  font-size: 17px;
 }
 
-.eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide .state a {
-  padding: 10px 0;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  background: #e7e2dd;
-  color: #444;
-  font-size: 30px;
+.eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide .location p {
+  padding: 0 0 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide:hover .photo {
   -webkit-transform: scale(1.3, 1.3);
   transform: scale(1.3, 1.3);
   transition: all 0.3s ease-in-out;
-}
-
-.eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide:hover a {
-  color: red;
 }
 
 .eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide:hover :after {
