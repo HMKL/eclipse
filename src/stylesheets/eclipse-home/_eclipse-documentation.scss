@@ -1,0 +1,146 @@
+.eclipse-documentation {
+  background: #f3f2f5;
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    @media (min-width: $lg) {
+      max-width: 80%;
+    }
+    p,
+    a,
+    span,
+    h1,
+    h2,
+    span {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+    }
+    .text {
+      text-align: center;
+      padding: 70px 0 50px 0;
+      @media (min-width: $lg) {
+        padding: 100px 0 80px 0;
+      }
+      h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 48px;
+        display: inline-block;
+        span {
+          position: relative;
+          font-family: "Roboto", sans-serif;
+          &:after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 4px;
+            background: #833efa;
+            left: 0;
+          }
+        }
+      }
+    }
+    .photo-content {
+      .buttons {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 50px;
+        @media (min-width: $lg) {
+          justify-content: end;
+        }
+        .item-btns {
+          width: 52px;
+          height: 52px;
+          position: relative;
+          &.swiper-button-next,
+          &.swiper-button-prev {
+            &:after {
+              content: "";
+              position: absolute;
+              background-image: url("data:image/svg+xml,%3Csvg aria-hidden=%27true%27 focusable=%27false%27 data-prefix=%27fas%27 data-icon=%27caret-down%27 class=%27svg-inline--fa fa-caret-down fa-w-10%27 role=%27img%27 xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 320 512%27%3E%3Cpath fill=%27rgb%2873, 80, 87%29%27 d=%27M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z%27%3E%3C/path%3E%3C/svg%3E");
+              rotate: 90deg;
+              height: 40px;
+              width: 24px;
+              rotate: 270deg;
+            }
+            &.swiper-button-prev {
+              &:after {
+                rotate: 90deg;
+              }
+            }
+          }
+        }
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+        .swiper-wrapper {
+          .swiper-slide {
+            .hovering {
+              &.pad {
+                padding: 0;
+                @media (min-width: $lg) {
+                  padding: 30px 0 0 0;
+                }
+              }
+              .inner-slide {
+                overflow: hidden;
+
+                .photo {
+                  background-position: 50%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  transition: all 0.3s ease-in-out;
+                  position: relative;
+                  &:before {
+                    content: "";
+                    display: block;
+                    padding: 130% 0 0 0;
+                  }
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: #000;
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                  }
+                }
+                .state {
+                  position: relative;
+                  z-index: 1;
+                  a {
+                    padding: 10px 0;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    background: #e7e2dd;
+                    color: #444;
+                    font-size: 30px;
+                  }
+                }
+                &:hover .photo {
+                  transform: scale(1.3, 1.3);
+                  transition: all 0.3s ease-in-out;
+                }
+                &:hover a {
+                  color: red;
+                }
+                &:hover :after {
+                  opacity: 0.2;
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
