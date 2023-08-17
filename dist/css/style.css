@@ -8653,6 +8653,10 @@ section .section-title.no-decoration:after {
   position: relative;
 }
 
+.eclipse-documentation .wrap .photo-content .buttons .item-btns:focus-visible {
+  outline: none;
+}
+
 .eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-next:after,
 .eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-prev:after {
   content: "";
