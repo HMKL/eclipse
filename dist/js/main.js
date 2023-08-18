@@ -49,7 +49,7 @@ let layoutHandler;
                 320: {
                     slidesPerView: 1.5,
                     spaceBetween: 20,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                 },
                 480: {
                     slidesPerView: 2,
@@ -189,7 +189,20 @@ let layoutHandler;
 
 
 
+  var btn = $('.back-top');
 
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show-btn-top');
+    } else {
+      btn.removeClass('show-btn-top');
+    }
+  });
+
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
 
 
 

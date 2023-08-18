@@ -8653,7 +8653,11 @@ section .section-title.no-decoration:after {
   width: 52px;
   height: 52px;
   position: relative;
-  border: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  color: #833efa;
 }
 
 .eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-next:focus,
@@ -8663,18 +8667,14 @@ section .section-title.no-decoration:after {
 
 .eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-next:after,
 .eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-prev:after {
-  content: "";
+  content: "\f061";
   position: absolute;
-  background-image: url("data:image/svg+xml,%3Csvg aria-hidden=%27true%27 focusable=%27false%27 data-prefix=%27fas%27 data-icon=%27caret-down%27 class=%27svg-inline--fa fa-caret-down fa-w-10%27 role=%27img%27 xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 320 512%27%3E%3Cpath fill=%27rgb%2873, 80, 87%29%27 d=%27M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z%27%3E%3C/path%3E%3C/svg%3E");
-  rotate: 90deg;
-  height: 40px;
-  width: 24px;
-  rotate: 270deg;
+  font-family: FontAwesome;
 }
 
 .eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-next.swiper-button-prev:after,
 .eclipse-documentation .wrap .photo-content .buttons .item-btns.swiper-button-prev.swiper-button-prev:after {
-  rotate: 90deg;
+  rotate: 180deg;
 }
 
 .eclipse-documentation .wrap .photo-content .swiper {
@@ -8753,6 +8753,43 @@ section .section-title.no-decoration:after {
 .eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering .inner-slide:hover :after {
   opacity: 0.2;
   transition: all 0.3s ease-in-out;
+}
+
+.back-top {
+  display: inline-block;
+  background-color: #833efa;
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.back-top.show-btn-top {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-top:after {
+  content: "\f077";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.back-top:hover {
+  cursor: pointer;
+  background-color: #333;
 }
 
 @media (min-width: 576px) {

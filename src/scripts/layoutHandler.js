@@ -49,7 +49,7 @@ let layoutHandler;
                 320: {
                     slidesPerView: 1.5,
                     spaceBetween: 20,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                 },
                 480: {
                     slidesPerView: 2,
