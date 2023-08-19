@@ -23,8 +23,11 @@
       }
       h2 {
         font-family: "Roboto", sans-serif;
-        font-size: 48px;
+        font-size: 40px;
         display: inline-block;
+        @media (min-width: $lg) {
+          font-size: 48px;
+        }
         span {
           position: relative;
           font-family: "Roboto", sans-serif;
@@ -41,6 +44,7 @@
       }
     }
     .photo-content {
+      padding: 0 0 100px 0;
       .buttons {
         display: flex;
         justify-content: space-between;

@@ -8615,7 +8615,7 @@ section .section-title.no-decoration:after {
 .eclipse-documentation .wrap .text h2,
 .eclipse-documentation .wrap .text .h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   display: inline-block;
 }
 
@@ -8634,6 +8634,10 @@ section .section-title.no-decoration:after {
   bottom: 4px;
   background: #833efa;
   left: 0;
+}
+
+.eclipse-documentation .wrap .photo-content {
+  padding: 0 0 100px 0;
 }
 
 .eclipse-documentation .wrap .photo-content .buttons {
@@ -8790,6 +8794,60 @@ section .section-title.no-decoration:after {
 .back-top:hover {
   cursor: pointer;
   background-color: #333;
+}
+
+.eclipse-footer-desktop .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.eclipse-footer-desktop .wrap p,
+.eclipse-footer-desktop .wrap a,
+.eclipse-footer-desktop .wrap span,
+.eclipse-footer-desktop .wrap h1,
+.eclipse-footer-desktop .wrap .h1,
+.eclipse-footer-desktop .wrap h2,
+.eclipse-footer-desktop .wrap .h2,
+.eclipse-footer-desktop .wrap span {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.eclipse-footer-desktop .wrap .inner {
+  padding: 100px 0;
+}
+
+.eclipse-footer-desktop .wrap .inner .spot {
+  position: relative;
+  height: 60px;
+  width: 300px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.eclipse-footer-desktop .wrap .inner .spot .social span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.eclipse-footer-desktop .wrap .inner .spot .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #833efa;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  opacity: 0.2;
+  border-radius: 10px;
 }
 
 @media (min-width: 576px) {
@@ -11712,6 +11770,10 @@ section .section-title.no-decoration:after {
   .home-page .eclipse-hero .wrap .inner .items.right {
     display: block;
   }
+
+  .eclipse-footer-desktop .wrap .inner .spot .overlay {
+    left: 113px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -13344,12 +13406,21 @@ section .section-title.no-decoration:after {
     padding: 100px 0 80px 0;
   }
 
+  .eclipse-documentation .wrap .text h2,
+  .eclipse-documentation .wrap .text .h2 {
+    font-size: 48px;
+  }
+
   .eclipse-documentation .wrap .photo-content .buttons {
     margin: 0 0 0 auto;
   }
 
   .eclipse-documentation .wrap .photo-content .swiper .swiper-wrapper .swiper-slide .hovering.pad {
     padding: 30px 0 0 0;
+  }
+
+  .eclipse-footer-desktop .wrap {
+    max-width: 1140px;
   }
 }
 

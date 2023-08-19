@@ -92,7 +92,7 @@ let layoutHandler;
   const getEclipseMenuHeader = document.querySelector('.eclipse-menu-header');
   const getInfoH = document.querySelectorAll('.info > ul > li > span');
   const getLargeInfo = document.querySelectorAll('.large-info > div');
-
+  const injectYear = document.querySelector('.inject-year');
 
 
 
@@ -188,7 +188,7 @@ let layoutHandler;
 
 
 
-
+  //Back to top button start
   var btn = $('.back-top');
 
   $(window).scroll(function () {
@@ -204,6 +204,7 @@ let layoutHandler;
     $('html, body').animate({ scrollTop: 0 }, '300');
   });
 
+  //Back to top button end
 
 
 
@@ -211,8 +212,12 @@ let layoutHandler;
 
 
 
+  //Inject date start
 
+  const year = new Date();
+  injectYear.innerHTML = `© ${year.getFullYear()} Catalin Baciu`;
 
+  //Inject date end
 
 
 
