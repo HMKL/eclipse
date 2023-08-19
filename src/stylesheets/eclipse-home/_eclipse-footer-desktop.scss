@@ -19,11 +19,14 @@
       .spot {
         position: relative;
         height: 60px;
-        width: 300px;
+        width: calc(85% - 40px);
         margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: $md) {
+          max-width: 300px;
+        }
         .social {
           span {
             font-family: "Roboto", sans-serif;

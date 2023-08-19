@@ -8577,7 +8577,15 @@ section .section-title.no-decoration:after {
   transform: rotateY(0deg);
 }
 
-.eclipse-menu-header .inner .items.buttons .large-info div.one a:after {
+.eclipse-menu-header .inner .items.buttons .large-info div.one a,
+.eclipse-menu-header .inner .items.buttons .large-info div.two a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.eclipse-menu-header .inner .items.buttons .large-info div.one a:after,
+.eclipse-menu-header .inner .items.buttons .large-info div.two a:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -8820,7 +8828,7 @@ section .section-title.no-decoration:after {
 .eclipse-footer-desktop .wrap .inner .spot {
   position: relative;
   height: 60px;
-  width: 300px;
+  width: calc(85% - 40px);
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11769,6 +11777,10 @@ section .section-title.no-decoration:after {
 
   .home-page .eclipse-hero .wrap .inner .items.right {
     display: block;
+  }
+
+  .eclipse-footer-desktop .wrap .inner .spot {
+    max-width: 300px;
   }
 
   .eclipse-footer-desktop .wrap .inner .spot .overlay {
