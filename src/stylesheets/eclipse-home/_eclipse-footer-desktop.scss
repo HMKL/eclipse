@@ -43,9 +43,14 @@
           left: 0;
           opacity: 0.2;
           border-radius: 10px;
+          transition: all 0.2s ease-in-out;
           @media (min-width: $md) {
             left: 113px;
           }
+        }
+        &:hover .overlay {
+          left: 0;
+          transition: all 0.2s ease-in-out;
         }
       }
     }
